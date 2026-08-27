@@ -1,0 +1,41 @@
+body {
+    background-color: orangered;
+    border: 3px solid black;
+}
+
+.head {
+    color: darkblue;
+}
+
+#bgline {
+    background-color: limegreen;
+}
+
+h2#bgline span {
+    color: red;
+}
+
+p {
+    color: white;
+}
+
+#para {
+    color: green;
+}
+
+p span {
+    color: black;
+    font-size: 20px;
+}
+
+ul {
+    color: white;
+}
+
+ol {
+    color: white;
+}
+
+a {
+    color: blue;
+}
