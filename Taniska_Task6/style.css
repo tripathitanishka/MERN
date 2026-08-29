@@ -1,377 +1,494 @@
-/* Remove default spacing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Whole page */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+   ========================= */
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================
+   LEFT SECTION
+   ========================= */
+
+.left-section {
+    width: 42%;
+    height: 72vh;
+
+    background-color: #16a9e8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     overflow: hidden;
 }
 
 
 /* =========================
-   NAVBAR
+   RIGHT SECTION
    ========================= */
 
-.navbar {
-    width: 100%;
-    height: 12vh;
-    padding: 0 7vw;
+.right-section {
+    width: 42%;
+    height: 72vh;
 
-    border-bottom: 1px solid #eeeeee;
+    background-color: white;
 
-    line-height: 12vh;
-}
-
-
-/* Logo */
-.logo {
-    display: inline-block;
-    width: 20%;
-    font-size: 1.5vw;
-    font-weight: bold;
-    color: #222222;
-}
-
-
-/* Navigation links */
-.nav-links {
-    display: inline-block;
-    width: 55%;
-    text-align: center;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #555555;
-
-    margin: 0 1.2vw;
-
-    font-size: 1vw;
-}
-
-.nav-links a:hover {
-    color: #159bd3;
-}
-
-
-/* Username */
-.username {
-    display: inline-block;
-    width: 20%;
-    text-align: right;
-
-    color: #159bd3;
-    font-size: 1vw;
-    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 /* =========================
-   HERO SECTION
+   LOGIN BOX
    ========================= */
 
-.hero {
+.login-box {
+    width: 72%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================
+   HEADING
+   ========================= */
+
+.login-box h1 {
+    color: #26394d;
+
+    font-size: 34px;
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+
+.welcome {
+    color: #8b949e;
+
+    font-size: 14px;
+
+    margin-bottom: 38px;
+}
+
+
+/* =========================
+   FORM
+   ========================= */
+
+form {
     width: 100%;
-    height: 88vh;
 
-    padding: 12vh 10vw 8vh 10vw;
+    display: flex;
+    flex-direction: column;
 }
 
 
-/* Left side */
-.hero-left {
-    float: left;
+form label {
+    color: #59636e;
 
-    width: 48%;
-    height: 70vh;
+    font-size: 13px;
 
-    padding-top: 7vh;
+    margin-bottom: 8px;
 }
 
 
-/* Main heading */
-.hero-left h1 {
-    font-size: 3vw;
-    line-height: 1.25;
+form input {
+    width: 100%;
+    height: 50px;
 
-    color: #333333;
+    border: 1px solid #e7eaed;
 
-    margin-bottom: 1vh;
-}
-
-
-/* Blue heading */
-.hero-left h2 {
-    font-size: 2vw;
-
-    color: #159bd3;
-
-    margin-bottom: 2vh;
-}
-
-
-/* Description */
-.hero-left p {
-    width: 90%;
-
-    font-size: 1.1vw;
-    line-height: 1.6;
-
-    color: #777777;
-
-    margin-bottom: 4vh;
-}
-
-
-/* Button */
-.hero-left button {
-    background-color: #159bd3;
-    color: white;
-
-    border: none;
     border-radius: 8px;
 
-    padding: 1.5vh 2vw;
+    background-color: #fafbfc;
 
-    font-size: 1vw;
+    padding: 0 15px;
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+
+    outline: none;
+}
+
+
+form input:focus {
+    border: 1px solid #27a9e0;
+}
+
+
+/* =========================
+   FORGOT PASSWORD
+   ========================= */
+
+.forgot-password {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+
+.forgot-password a {
+    color: #68737d;
+
+    text-decoration: none;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+   ========================= */
+
+button {
+    width: 100%;
+    height: 55px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #27a9e0;
+
+    color: white;
+
+    font-size: 16px;
 
     cursor: pointer;
 }
 
-.hero-left button:hover {
-    background-color: #087eb2;
+
+button:hover {
+    background-color: #1595cc;
 }
 
 
 /* =========================
-   RIGHT SIDE
+   REGISTER
    ========================= */
 
-.hero-right {
-    float: right;
-
-    width: 45%;
-    height: 70vh;
-
-    text-align: center;```css
-/* =========================
-   RESET
-   ========================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/* =========================
-   WHOLE PAGE
-   ========================= */
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #333333;
-    overflow: hidden;
-}
-
-
-/* =========================
-   NAVBAR
-   ========================= */
-
-.navbar {
-    width: 100%;
-    height: 12vh;
-    padding: 0 7vw;
-
-    border-bottom: 1px solid #eeeeee;
-
-    line-height: 12vh;
-}
-
-
-/* Logo */
-
-.logo {
-    display: inline-block;
-    width: 20%;
-
-    font-size: 1.5vw;
-    font-weight: bold;
-    color: #222222;
-
-    vertical-align: middle;
-}
-
-
-/* Navigation Links */
-
-.nav-links {
-    display: inline-block;
-    width: 55%;
-
+.register {
     text-align: center;
-    vertical-align: middle;
 
-    line-height: normal;
+    color: #7d858d;
+
+    font-size: 12px;
+
+    margin-top: 35px;
 }
 
-.nav-links a {
+
+.register a {
+    color: #27a9e0;
+
     text-decoration: none;
-
-    color: #555555;
-
-    margin: 0 1.2vw;
-
-    font-size: 1vw;
-
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #159bd3;
 }
 
 
-/* Username */
+/* ==================================================
+   LAUNDRY ILLUSTRATION
+   ================================================== */
 
-.username {
-    display: inline-block;
-    width: 20%;
+.laundry-image {
+    width: 75%;
+    height: 75%;
 
-    text-align: right;
-    vertical-align: middle;
+    position: relative;
 
-    color: #159bd3;
-
-    font-size: 1vw;
-    font-weight: bold;
-
-    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 /* =========================
-   HERO SECTION
+   WASHING MACHINE
    ========================= */
 
-.hero {
-    width: 100%;
-    height: 88vh;
+.washing-machine {
+    width: 220px;
+    height: 270px;
 
-    padding: 8vh 10vw 8vh 10vw;
+    position: absolute;
+
+    top: 95px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+
+/* Machine top */
+
+.machine-top {
+    width: 220px;
+    height: 65px;
+
+    background-color: #f4f4ed;
+
+    border-radius: 12px 12px 4px 4px;
+
+    position: relative;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
+    gap: 12px;
+
+    padding-left: 35px;
+}
+
+
+.round-button {
+    width: 25px;
+    height: 25px;
+
+    background-color: #f2c735;
+
+    border-radius: 50%;
+
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.15);
+}
+
+
+.long-button {
+    width: 65px;
+    height: 18px;
+
+    background-color: #f0c434;
+
+    border-radius: 10px;
+
+    margin-left: 10px;
+}
+
+
+/* Machine body */
+
+.machine-body {
+    width: 220px;
+    height: 205px;
+
+    background-color: #078fcb;
+
+    border-radius: 0 0 8px 8px;
+
+    position: relative;
+
+    border: 4px solid rgba(255,255,255,0.25);
+}
+
+
+/* Washing machine door */
+
+.door {
+    width: 115px;
+    height: 115px;
+
+    background-color: #f4f4ed;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 30px;
+    left: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.door-inner {
+    width: 82px;
+    height: 82px;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle at 35% 30%,
+        #58d4ff,
+        #087fc1 60%,
+        #086da8
+    );
+
+    border: 5px solid #1599d2;
+}
+
+
+/* Small yellow button */
+
+.small-button {
+    width: 28px;
+    height: 28px;
+
+    background-color: #f1c638;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    right: 20px;
+    top: 20px;
 }
 
 
 /* =========================
-   LEFT SIDE
+   BOOKS
    ========================= */
 
-.hero-left {
-    width: 48%;
+.books {
+    position: absolute;
 
-    padding-top: 0;
+    top: 35px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 110px;
+    height: 60px;
 }
 
 
-/* Main Heading */
+.book {
+    height: 12px;
 
-.hero-left h1 {
-    font-size: 3vw;
-    line-height: 1.25;
+    position: absolute;
 
-    color: #333333;
+    left: 5px;
 
-    margin-bottom: 1vh;
+    border-radius: 2px;
 }
 
 
-/* Blue Heading */
+.blue-book {
+    width: 85px;
 
-.hero-left h2 {
-    font-size: 2vw;
+    top: 5px;
 
-    color: #159bd3;
-
-    margin-bottom: 2vh;
+    background-color: #229ed3;
 }
 
 
-/* Description */
+.yellow-book {
+    width: 90px;
 
-.hero-left p {
-    width: 90%;
+    top: 18px;
 
-    font-size: 1.1vw;
-    line-height: 1.6;
+    background-color: #f2c52e;
+}
 
-    color: #777777;
 
-    margin-bottom: 4vh;
+.orange-book {
+    width: 100px;
+
+    top: 31px;
+
+    background-color: #e9a52e;
 }
 
 
 /* =========================
-   BUTTON
+   BOTTLE
    ========================= */
 
-.hero-left button {
-    background-color: #159bd3;
+.bottle {
+    width: 30px;
+    height: 62px;
 
-    color: #ffffff;
+    background-color: #f5f3e8;
 
-    border: none;
+    border-radius: 10px 10px 7px 7px;
+
+    position: absolute;
+
+    top: 25px;
+    left: 55%;
+
+    z-index: 2;
+}
+
+
+.bottle-cap {
+    width: 14px;
+    height: 7px;
+
+    background-color: #e6bd39;
+
+    border-radius: 4px;
+
+    position: absolute;
+
+    top: -6px;
+    left: 8px;
+}
+
+
+/* =========================
+   LAUNDRY BASKET
+   ========================= */
+
+.laundry-basket {
+    width: 100px;
+    height: 90px;
+
+    background-color: #e7b32e;
+
+    border-radius: 5px 5px 12px 12px;
+
+    position: absolute;
+
+    bottom: 55px;
+    left: 22%;
+
+    z-index: 5;
+
+    transform: rotate(-4deg);
+}
+
+
+.basket-clothes {
+    width: 55px;
+    height: 65px;
+
+    background-color: #54d94a;
+
+    position: absolute;
+
+    right: -20px;
+    top: -12px;
+
     border-radius: 8px;
 
-    padding: 1.5vh 2vw;
-
-    font-size: 1vw;
-
-    cursor: pointer;
-
-    transition: background-color 0.3s ease;
-}
-
-.hero-left button:hover {
-    background-color: #087eb2;
-}
-
-
-/* =========================
-   RIGHT SIDE
-   ========================= */
-
-.hero-right {
-    width: 45%;
-
-    text-align: center;
-}
-
-
-/* Laundry Image */
-
-.hero-right img {
-    width: 90%;
-    height: 55vh;
-
-    object-fit: cover;
-
-    border-radius: 20px;
-
-    display: block;
-    margin: auto;
+    transform: rotate(8deg);
 }
 
 
@@ -379,92 +496,44 @@ body {
    RESPONSIVE DESIGN
    ========================= */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
-    body {
-        overflow: auto;
+    .left-section,
+    .right-section {
+        width: 45%;
     }
 
-    .navbar {
-        height: auto;
-        padding: 20px 5vw;
-        line-height: normal;
+    .login-box {
+        width: 80%;
     }
 
-    .logo,
-    .nav-links,
-    .username {
-        width: 100%;
-        display: block;
-        text-align: center;
-        margin: 10px 0;
+    .washing-machine {
+        transform: translateX(-50%) scale(0.85);
     }
+}
 
-    .nav-links a {
-        font-size: 14px;
-        margin: 0 8px;
-    }
 
-    .username {
-        font-size: 14px;
-    }
+@media (max-width: 700px) {
 
-    .hero {
-        height: auto;
-        padding: 50px 5vw;
-
-        display: flex;
+    .container {
         flex-direction: column;
-        gap: 40px;
     }
 
-    .hero-left,
-    .hero-right {
-        width: 100%;
+    .left-section,
+    .right-section {
+        width: 90%;
+        height: 50vh;
     }
 
-    .hero-left h1 {
-        font-size: 36px;
+    .left-section {
+        min-height: 350px;
     }
 
-    .hero-left h2 {
-        font-size: 26px;
+    .right-section {
+        min-height: 450px;
     }
 
-    .hero-left p {
-        width: 100%;
-        font-size: 16px;
+    .login-box {
+        width: 80%;
     }
-
-    .hero-left button {
-        font-size: 14px;
-        padding: 12px 20px;
-    }
-
-    .hero-right img {
-        width: 100%;
-        height: 350px;
-    }
-}
-```
-
-}
-
-
-/* Laundry image */
-.hero-right img {
-    width: 90%;
-    height: 55vh;
-
-    object-fit: cover;
-
-    border-radius: 20px;
-}
-
-
-/* Clear floating elements */
-.hero::after {
-    content: "";
-    display: block;
-    clear: both;
 }
